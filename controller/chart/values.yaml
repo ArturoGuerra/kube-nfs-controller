@@ -1,0 +1,24 @@
+name: nfs-provisioner
+image: arturoguerra/kube-nfs-provisioner:latest
+
+
+ServiceAccount:
+  name: default
+
+ClusterRoleBinding:
+  name: nfs-provisioner
+
+ClusterRole:
+  name: nfs-provisioner
+
+Role:
+  name: nfs-provisioner
+
+RoleBinding:
+  name: nfs-provisioner
+
+
+config:
+  server: ""
+  mountPath: ""
+  fakePath: ""

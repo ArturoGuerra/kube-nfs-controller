@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name:  {{ .Values.name }}
+data:
+  SERVER: {{ .Values.config.server }}
+  FAKEPATH: {{ .Values.config.fakePath }}
+  MOUNTPATH: {{ .Values.config.mountPath }}
